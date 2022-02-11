@@ -1,0 +1,250 @@
+
+
+@media only screen and (max-width: 1000px) {
+
+    .blogFeatureMobile {
+        padding: 2vh;
+        background:rgb(0, 132, 255, 0.65);
+        border-radius: 5%;
+        margin-bottom: 5vh;
+    }
+
+    .blogTitleMobile h2 {
+        font-size: 2.4rem;
+        text-align: center;
+        margin: 1vh 0vh 3vh 0vh;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 0.3rem;
+    }
+
+    .blogFeatureMobile img {
+        width: 100%;
+        transition: 0.5s;
+        border-radius: 4%;
+    }
+
+    .blogFeatureMobile img:hover {
+        filter:grayscale(100);
+        transition: 0.5s;
+    }
+
+    .blogFeatureMobile h3 {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: 1vh;
+        margin-bottom: 0vh;
+    }
+
+    .blogFeatureMobile h3:hover {
+        text-decoration: underline;
+    }
+
+    .blogFeatureMobile a {
+        text-decoration: none;
+    }
+
+    .blogFeatureMobile h4 {
+        text-align: center;
+        color:black;
+        font-size: 1.3rem;
+        margin-top: 1vh;
+        margin-bottom: 1.5vh;
+    }
+
+    .blogFeatureMobile p {
+        margin: 0vh 3vh 0vh 3vh;
+        font-size: 1rem;
+    }
+
+
+    .blogOlderPostsMobile {
+        margin: 0vh 0vh 1.5vh 0vh;
+        font-size: 1.8rem;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+    }
+
+
+    .otherBlogsMobile {
+        padding: 3vh;
+        margin: 0vh 1vh;
+        background: hsl(53 71% 87% / 0.97);
+        border-radius: 5%;
+    }
+
+    .otherBlogsMobile1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)), url('../images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg');
+        background-size: cover;
+        border-radius: 4%;
+        margin: 0vh 0vh 3vh 0vh;
+        height: 23vh;
+        width: 100%;
+    }
+
+    .otherBlogsMobile2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)), url('../images/writinglessonspart1.jpg');
+        background-size: cover;
+        background-position: 50% 80%;
+        border-radius: 4%;
+        margin: 3vh 0vh;
+        height: 23vh;
+        width: 100%;
+    }
+
+    .otherBlogsMobile3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)), url('../images/welcomeaboard.jpg');
+        background-size: cover;
+        background-position: 50% 60%;
+        border-radius: 4%;
+        margin: 3vh 0vh 0vh 0vh;
+        height: 23vh;
+        width: 100%;
+    }
+
+    .otherBlogsMobileTopPadding {
+        height: 45%;
+    }
+    .otherBlogsMobile h3 {
+        /*padding: 6vh 3vh 0vh 3vh;*/
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 0vh 2vh;
+        color: white;
+    }
+
+    .otherBlogsMobile a {
+        text-decoration: none;
+    }
+
+    .otherBlogsMobile h3:hover{
+        color:rgb(0, 132, 255);
+    }
+
+    .otherBlogsMobile h4 {
+        text-align: center;
+        margin: 2vh 0vh 0vh 0vh;
+        padding-bottom: 2vh;
+        color: white;
+    }
+
+}
+
+
+
+
+
+/*--------------------DESKTOP VERSION----------------------------*/
+
+
+.blogFeatureDesktop {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.blogTitleDesktop {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 3vh 0vh 3vh 0vh;
+    letter-spacing: 0.3rem;
+}
+
+.blogTitleDesktop h2 {
+    font-family: 'Lato', sans-serif;
+    margin: 5vh 0 0 0;
+}
+
+.blogFeatureDesktop img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 4%;
+}
+
+.blogFeatureDesktop h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+}
+
+.blogFeatureDesktop h3:hover {
+    text-decoration: underline;
+}
+
+.blogFeatureDesktop a {
+    text-decoration: none;
+}
+
+.blogFeatureDesktop h4 {
+    text-align: center;
+    color:black;
+    font-size: 1.7rem;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+}
+
+.blogFeatureDesktop p {
+    margin: 0vh 2vh 8vh 2vh;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+}
+
+.blogOlderPostsDesktop {
+    text-align: center;
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 1vh;
+    grid-column: 1 / 4;
+}
+
+.oldBlogDesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 40vh;
+    padding: 2vh 2vh 4vh 2vh;
+    margin: 0 0 8vh 0;
+    background:rgba(224, 224, 224, 0.53);
+}
+
+.oldBlogDescripsDesktop {
+    margin: 21vh 2vh 2vh 2vh;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.oldBlogDateDesktop {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.oldBlog1Desktop {
+    margin: 2vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+
+.oldBlog2Desktop {
+    margin: 2vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/writinglessonspart1.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+
+.oldBlog3Desktop {
+    margin: 2vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/welcomeaboard.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+
+

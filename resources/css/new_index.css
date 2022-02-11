@@ -1,0 +1,698 @@
+* {
+    font-family: monospace, Verdana, sans-serif, Arial;
+     /*background color was beige and then rgb(231, 231, 216) -- I think this one looks better now*/
+    color: black;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 0;
+    font-size: 10pt;
+}
+
+html {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 10pt;
+}
+
+/*-----------------------------HEADER----------------------------*/
+.headerDesktop {
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    margin: 0;
+    line-height: 12vh;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    border: 1vh solid black;
+    box-sizing: border-box;
+}
+
+.header1 {
+    width: 25%;
+    margin-top: 0;
+    margin-left: 0;
+    background-color: hsl(53 71% 87%);
+}
+
+/*rgb(241, 216, 163) previous color*/
+
+.header1 h1 {
+    font-size: 3.2em;
+    text-shadow: 1.5px 1.5px rgb(0, 132, 255); /*rgb(88, 88, 39)*/
+    text-align: center;
+    color: black;
+    margin: auto;
+    background-color: hsl(53 71% 87%);
+}
+
+.header1 h1 a:hover {
+    color: black;
+    text-shadow: 2.5px 2.5px yellow;
+}
+
+.headerDesktop nav {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0;
+    background-color: hsl(53 71% 87%);
+}
+
+.headerDesktop nav h4 {
+    font-size: 1.6em; /*change this later*/
+    margin: 0;
+    color: rgb(55, 56, 56);
+    text-shadow: 1px 1px rgb(0, 132, 255);
+    padding-right: 1vw;
+    padding-left: 1vw;
+    background-color: hsl(53 71% 87%);
+    overflow: auto;
+}
+
+.headerDesktop nav a:hover {
+    text-shadow: 2px 2px yellow;
+    color: black;
+}
+
+header .headerDesktop a {
+    text-decoration: none;
+    color: black;
+    background-color: hsl(53 71% 87%);
+}
+
+.headerMobile {
+    display: none;
+}
+
+
+
+
+/*------------------------------WHOLE SITE CONTAINER--------------------------------*/
+
+
+
+/*-------------------------------BODY FORMAT----------------------------------------*/
+.bodyContainer {
+    margin-left: 7%;
+    margin-right: 7%;
+    position: relative;
+    top: 14vh;
+    display: flex;
+    padding-bottom: 2vh;
+    flex: 0 1 80vw;
+}
+
+.leftContentContainer {
+    display: block;
+    margin-top: 2vh;
+    width: 70%;
+}
+
+.rightContentContainer {
+    display: block;
+    margin-top: 4vh;
+    width: 29%;
+}
+
+
+/*---------VERTICAL BORDER BETWEEN LEFT & RIGHT CONTAINERS--------*/
+.middleVerticalBorder {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    margin-left: 2vh;
+    display: block;
+    width: 1%;
+    height: auto;
+    border-right: 0.5vh solid black;
+}
+
+/*--------------------------------SUBTITLE--------------------------------*/
+.subtitle {
+    display: block;
+    margin-top: 3vh;
+}
+
+.subtitle h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2vh;
+    margin-top: 1.5vh;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.subtitle h2 span {
+    font-style: italic;
+}
+
+.subtitle h1 {
+    margin-top: 2vh;
+    margin-bottom: 2.5vh;
+    text-align: center;
+    font-size: 3.1rem;
+    text-shadow: 1.5px 1.5px rgb(0, 132, 255);
+}
+
+.coverPic {
+    display: flex;
+    justify-content: center;
+}
+
+.coverPic img {
+    width: 85%;
+    height: 85%;
+    filter: drop-shadow(0 0 2rem hsl(53 71% 87%));
+}
+
+.subtitle h3 {
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.subtitle p {
+    font-size: 1.5rem;
+    padding-top: 3vh;
+    text-align: left;
+    line-height: 2.1rem;
+    font-weight: 450;
+    font-family: 'Lato', sans-serif;
+    word-spacing: 0.2rem;
+}
+
+.subtitle a {
+    font-family: 'Lato', sans-serif;
+    line-height: 2.1rem;
+    word-spacing: 0.2rem;
+}
+
+.subtitle a:hover {
+    color: rgb(0, 80, 155);
+}
+
+.subtitle h5 {
+    margin-right: 7vw;
+    text-align: right;
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+/*----------------------MY NOVEL FEATURE - FIRST SIDE SECTION-----------------------*/
+
+.subtitleSideSection { /*---------------------------change names later on-----------------*/
+    margin-top: 7.5vh;
+    margin-left: 2.5vw;
+    margin-bottom: 4vh;
+    background-color: hsl(53 71% 87%);
+    border: 0.4vh solid black;
+}
+
+.subtitleSideSection a {
+    text-decoration: none;
+    background-color: hsl(53 71% 87%);
+}
+
+#underlined1 {
+    text-decoration: underline;
+}
+
+.subtitleSideSectionText {
+    margin: 2vh;
+    background-color: hsl(53 71% 87%);
+}
+
+.subtitleSideSectionText h2, .subtitleSideSectionText h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5vh;
+    background-color: hsl(53 71% 87%);
+}
+
+.subtitleSideSectionText h3 {
+    font-size: 1.5rem;
+}
+
+.subtitleSideSectionText h2 {
+    text-shadow: 0.2vh 0.2vh rgb(0, 132, 255);
+    font-size: 1.7rem;
+}
+
+.subtitleSideSectionText h2:hover {
+    text-shadow: 0.2vh 0.2vh yellow;
+}
+
+.subtitleSideSectionText p {
+    line-height: 1.5rem;
+    word-spacing: 0.5pt;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: hsl(53 71% 87%);
+}
+
+.subtitleSideSectionText h4 {
+    font-size: 1.4em;
+    text-align: center;
+    background-color: hsl(53 71% 87%);
+    color:rgb(0, 132, 255);
+}
+
+.subtitleSSImage {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(53 71% 87%);
+}
+
+.subtitleSSImage img {
+    width: 100%;
+    height: auto;
+    background-color: hsl(53 71% 87%);
+}
+
+/*------------------------------BORDER BETWEEN FEATURE SECTIONS 1 AND 2---------------------------*/
+.borderBetweenOneAndTwo {
+    border-bottom: 0.5vh solid black;
+    width: 97%;
+    margin: 0 auto;
+}
+
+/*------------------------------POST HIGHLIGHTS - 2ND FEATURE CONTENT------------------------*/
+
+.postHighlights {
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.postHighlights a {
+    text-decoration: none;
+    background-color: hsl(53 71% 87%);
+    text-shadow: 1.5px 1.5px rgb(0, 132, 255)
+}
+
+.postHighlights a:hover {
+    text-shadow: 1.5px 1.5px yellow;
+}
+
+.resume {
+    width: 28%;
+    margin-bottom: 4vh;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+.novel {
+    width: 28%;
+    margin-bottom: 4vh;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+.projects {
+    width: 28%;
+    margin-bottom: 4vh;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+.writing {
+    width: 28%;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+.blog {
+    width: 28%;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+.mythicGame {
+    width: 28%;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+.resume h2, .novel h2, .projects h2, .writing h2, .blog h2, .mythicGame h2 {
+    text-align: center;
+    background-color: hsl(53 71% 87%);
+    font-size: 2.3rem;
+}
+
+.highlightIcons {
+    margin: auto;
+    background-color: hsl(53 71% 87%);
+    width: 70%;
+}
+
+.highlightIcons img {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    background-color: hsl(53 71% 87%);
+}
+
+/*-----------------------------HORIZONTAL BORDER ON SIDE SECTION ------------------------------*/
+.horizontalBorderContainer1 {
+    display: flex;
+    justify-content: center;
+}
+
+.horizontalBorder1 {
+    border-bottom: 0.7vh solid black;
+    margin-left: 5vh;
+    width: 80%;
+}
+
+/*-----------------------------RECENT POSTS SIDE SECTION-------------------------*/
+
+#postTags {
+    color:rgb(0, 80, 155);
+    text-decoration: none;
+    background-color: hsl(53 71% 87%);
+}
+
+#postTags:hover {
+    color: black;
+}
+
+.recentPosts {
+    margin-top: 4vh;
+    margin-left: 2.5vw;
+    margin-bottom: 4vh;
+}
+
+.recentPosts h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2vh;
+}
+
+#italicLink {
+    font-style: italic;
+    text-decoration: none;
+    background-color: hsl(53 71% 87%);
+    text-shadow: 0.1vh 0.1vh rgb(0, 132, 255);
+}
+
+#italicLink:hover {
+    text-shadow: 0.2vh 0.2vh yellow;
+}
+
+.recentPosts h3, .recentPosts h4, .recentPosts p {
+    margin: 2vh;
+    background-color: hsl(53 71% 87%);
+}
+.recentPost1, .recentPost2, .recentPost3 {
+    margin: 0 0 3vh 0;
+    background-color: hsl(53 71% 87%);
+    border: 0.4vh solid black;
+}
+
+.recentPosts h3 {
+    font-size: 1.7rem;
+}
+
+.recentPosts h4 {
+    font-size: 1.1rem;
+}
+
+.recentPosts h5 {
+    margin: 2vh;
+    font-size: 1.0rem;
+    background-color:hsl(53 71% 87%);
+}
+
+.recentPosts p {
+    font-size: 1.1rem;
+    margin-bottom: 1vh;
+    line-height: 1.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#readMoreLink {
+    font-size: 1.4rem;
+    color:rgb(0, 80, 155);
+    text-decoration: underline;
+    background-color: hsl(53 71% 87%);
+}
+
+#readMoreLink:hover {
+    color: black;
+}
+
+.recentPosts h6 {
+    margin: 3vh 2vh 3vh 2vh;;
+    background-color: hsl(53 71% 87%);
+    text-align: center;
+}
+
+.morePosts {
+    display: block;
+    text-align: center;
+    margin-top: 3.5vh;
+    margin-bottom: 1vh;
+    font-size: 1.6em;
+}
+
+.morePosts a {
+    font-size: 1.3rem;
+    color: black;
+    text-shadow: 0.1vh 0.1vh rgb(0, 132, 255);
+}
+
+.morePosts a:hover {
+    text-shadow: 0.5px 0.5px yellow;
+}
+
+
+/*------------MAILCHIMP SIGNUP FORM -- DESKTOP AND MOBILE-----------------*/
+#mc_embed_signup_scroll {
+    margin-top: 4vh;
+    margin-left: 2.5vw;
+    margin-bottom: 4vh;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+#mc_embed_signup_scroll h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2vh;
+    background-color: hsl(53 71% 87%);
+}
+
+#mc_embed_signup_scroll label {
+    font-size: 1.2rem;
+    background-color: hsl(53 71% 87%);
+}
+
+#mc_embed_signup_scroll2 {
+    margin-top: 4vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 4vh;
+    border: 0.4vh solid black;
+    background-color: hsl(53 71% 87%);
+}
+
+#mc_embed_signup_scroll2 h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2vh;
+    background-color: hsl(53 71% 87%);
+}
+
+#mc_embed_signup_scroll2 label {
+    font-size: 1.2rem;
+    background-color: hsl(53 71% 87%);
+}
+
+.mc-field-group {
+    width: 80%;
+    margin: auto;
+    background-color: hsl(53 71% 87%);
+}
+
+#mce-EMAIL {
+    width: 100%;
+    margin-bottom: 2vh;
+    background-color: white;
+}
+
+.clear {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 1.5vh;
+    background-color: hsl(53 71% 87%);
+}
+
+#mc-embedded-subscribe {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: auto;
+    background-color: hsl(53 71% 87%);
+    border: 0.2vh solid black;
+}
+
+#mc-embedded-subscribe:hover {
+    background-color:rgb(0, 132, 255);
+}
+
+
+
+/*------------MOBILE FOOTER DISPLAY NONE-----------*/
+.footerMobile {
+    display: none;
+}
+
+
+
+/*------------------------------FOOTER-----------------------------*/
+/*---I think if this doesn't work on other pages that aren't more than 100% height, then I can 
+just customize those pages with a sticky footer at the bottom*/
+
+footer {
+    position: relative;
+    top: 14vh;
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    line-height: 13vh;
+    background-color: hsl(53 71% 87%);
+    border-top: 0.5vh solid black;
+}
+
+.footerTitle {
+    width: 65%;
+    background-color: hsl(53 71% 87%);
+}
+
+.footerInfo {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(53 71% 87%);
+}
+
+.footerInfo h3 {
+    font-size: 1.7rem;
+    margin: 0;
+    background-color: hsl(53 71% 87%);
+}
+
+.footerTitle h5 {
+    font-size: 1.4rem;
+    padding-left: 1vh;
+    margin: 0;
+    background-color: hsl(53 71% 87%);
+}
+
+footer a {
+    background-color: hsl(53 71% 87%);
+    text-decoration: none;
+}
+
+
+/*---------------------------------SHORT FOOTER----------------------------------*/
+.shortFooterDesktop {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    line-height: 13vh;
+    background-color: hsl(53 71% 87%);
+    border-top: 0.5vh solid black;
+}
+
+.shortFooterTitle {
+    width: 65%;
+    background-color: hsl(53 71% 87%);
+}
+
+.shortFooterInfo {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    background-color: hsl(53 71% 87%);
+}
+
+.shortFooterInfo h3 {
+    font-size: 1.7rem;
+    margin: 0;
+    background-color: hsl(53 71% 87%);
+}
+
+.shortFooterTitle h5 {
+    font-size: 1.4rem;
+    padding-left: 1vh;
+    margin: 0;
+    background-color: hsl(53 71% 87%);
+}
+
+.shortFooterMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .shortFooterDesktop {
+        display: none;
+    }
+
+    .shortFooterMobile {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        height: 13vh;
+        margin-bottom: 0;
+        background-color:hsl(53 71% 87%);
+        border-top: 0.5vh solid black;
+        margin-top: 5vh;
+    }
+
+    .shortFooterTitleMobile {
+        width: 50%;
+        background-color:hsl(53 71% 87%);
+    }
+
+    .shortFooterTitleMobile h5 {
+        margin-top: 2vh;
+        padding: 0;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: 1000;
+        background-color:hsl(53 71% 87%);
+    }
+
+    .shortFooterInfoMobile {
+        margin-top: 1vh;
+        margin-right: 5vh;
+        display: block;
+        width: 50%;
+        background-color:hsl(53 71% 87%);
+    }
+
+    .shortFooterInfoMobile h3 {
+        text-align: right;
+        font-size: 1rem;
+        margin: 0;
+        background-color:hsl(53 71% 87%);
+    }
+}
+
+
+/*-----------------------------------------UNDER CONSTRUCTION-------------------------------------------*/
+
+.comingSoon {
+    position: relative;
+    top: 30vh;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}

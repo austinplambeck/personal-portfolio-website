@@ -1,0 +1,527 @@
+* {
+    font-family: monospace, Verdana, sans-serif, Arial;
+    color: black;
+}
+
+
+body {
+    margin: 0;
+    padding-top: 0;
+    font-size: 10pt;
+}
+
+html {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 10pt;
+}
+
+.wholeSiteMobile {
+    display: none;
+}
+
+.headerMobile {
+    display: none;
+}
+
+.footerMobile {
+    display: none;
+}
+
+
+/*--------------------------HEADER------------------------------*/
+
+.headerCoverDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url('../images/websiteintropic.jpg');
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.headerDesktop {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transition: 0.75s;
+}
+
+.headerSubtitleDesktop {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -15%;
+    width: 30%;
+}
+
+.headerSubtitleDesktop h2 {
+    color: white;
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.headerDesktop a, .headerDesktop span {
+    color: white;
+    text-decoration: none;
+}
+
+.headerDesktop h4 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.headerDesktop a:hover {
+    color: rgb(0, 132, 255);
+    transition: 0.1s;
+}
+
+.headerTitleDesktop {
+    width: 20%;
+    margin: 5vh 0vh 3vh 5vh;
+}
+
+.headerTitleDesktop h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 0.2vh 0.2vh black;
+}
+
+.navDesktop {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 3.5vh auto;
+}
+
+/*----------------------STICKY HEADER-----------------------*/
+
+.headerDesktop.sticky {
+    transition: 0.75s;
+    background: hsl(53 71% 87% / 0.985);
+}
+
+.headerDesktop.sticky a, .headerDesktop.sticky span{
+    color: black;
+}
+
+.headerDesktop.sticky h1 {
+    text-shadow: 0.2vh 0.2vh white;
+}
+
+.headerDesktop.sticky a:hover {
+    color:rgb(0, 132, 255);
+    transition: 0.1s;
+}
+
+
+/*--------------------------------DESKTOP FORMAT & GRID -----------------------*/
+.wholeSiteDesktop {
+    position: relative;
+    margin: 0 10% 0 10%;
+    display: grid;
+    grid-template-columns: 64% 2% 34%;
+}
+
+
+/*--------------------------------ABOUT DESKTOP-----------------------------------*/
+
+/*.verticalBorderDesktop {
+    border-left: 0.5vh solid black;
+    margin-top: 4vh;
+} */
+
+
+.aboutDesktop {
+    margin: 4vh 2vh 2vh 2vh;
+}
+
+.aboutDesktop h3 {
+    font-size: 1.5rem;
+    margin: 2vh 0vh 4vh 0vh;
+}
+
+.aboutDesktop h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 2vh;
+}
+
+.aboutDesktop span {
+    font-style: italic;
+}
+
+.aboutDesktop p {
+    font-size: 1.45rem;
+    margin-top: 3.5vh;
+    line-height: 2.1rem;
+}
+
+.aboutDesktop a {
+    line-height: 2.1rem;
+    font-weight: bold;
+    color: rgb(0, 132, 255);
+}
+
+.aboutDesktop a:hover {
+    color:rgb(0, 101, 196);
+}
+
+.aboutSignatureDesktop {
+    text-align: right;
+    font-weight: bold;
+    margin-right: 12vh;
+}
+
+
+/*------------------------NOVEL FEATURE DESKTOP----------------------------*/
+
+.myNovelFeatureDesktop {
+    justify-content: center;
+    margin: 5vh 0vh 0vh 0vh;
+    background:rgba(224, 224, 224, 0.53);
+    padding: 2vh;
+}
+
+.myNovelFeatureDesktop a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+}
+
+.myNovelFeatureDesktop h2 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.myNovelFeatureDesktop h2:hover {
+    text-shadow: 0.2vh 0.2vh white;
+}
+
+#novelDateDesktop {
+    text-decoration: underline;
+    color:black;
+}
+
+.myNovelFeatureDesktop h3 {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.myNovelFeatureDesktop h4 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.pinterestBoard {
+    display: flex;
+    justify-content: center;
+}
+
+.pinBoardFiller {
+    height: 370px;
+    width: 330px;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+.myNovelFeatureDesktop p {
+    font-family: monospace, Verdana, sans-serif, Arial;
+    font-weight: normal;
+    line-height: 1.7rem;
+    font-size: 1.25rem;
+    margin: 3vh 3vh 2vh 3vh;
+}
+
+
+/*---------------------------CATEGORIES DESKTOP--------------------------------*/
+
+.categoriesDesktop {
+    margin: 6vh 3vh 8vh 3vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.categoriesDesktop a {
+    text-decoration: none;
+}
+
+.categoryTitleDesktop {
+    color: white;
+    margin: 25vh 2vh 0vh 3vh;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+.categoryTitleDesktop:hover {
+    color:rgb(0, 132, 255);
+}
+
+.divLink {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+.divLink:hover h3 {
+    color:rgb(0, 132, 255);
+    text-shadow: 0.2vh 0.2vh black;
+}
+
+.tsCategoryDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/TScategory3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    height: 35vh;
+    border: 0.05vh solid white;
+    transition: 2s;
+    filter: grayscale(100);
+    position: relative;
+}
+
+.tsCategoryDesktop:hover {
+    filter: none;
+    transition: 0.25s;
+}
+
+.projectsCategoryDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/joan-gamell-ZS67i1HLllo-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    border: 0.05vh solid white;
+    transition: 2s;
+    filter: grayscale(100);
+    position: relative;
+}
+
+.projectsCategoryDesktop:hover {
+    filter: none;
+    transition: 0.25s;
+}
+
+
+.writingCategoryDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/aaron-burden-y02jEX_B0O0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70% 85%;
+    height: 35vh;
+    border: 0.05vh solid white;
+    transition: 2s;
+    filter: grayscale(100);
+    position: relative;
+}
+
+.writingCategoryDesktop:hover {
+    filter: none;
+    transition: 0.25s;
+}
+
+.blogCategoryDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/girl-with-red-hat-Z6SXt1v5tP8-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 60%;
+    height: 35vh;
+    border: 0.05vh solid white;
+    transition: 2s;
+    filter: grayscale(100);
+    position: relative;
+}
+
+.blogCategoryDesktop:hover {
+    filter: none;
+    transition: 0.25s;
+}
+
+.mythicgameCategoryDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/dore3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 20% 40%;
+    height: 35vh;
+    border: 0.05vh solid white;
+    transition: 2s;
+    filter: grayscale(100);
+    position: relative;
+}
+
+.mythicgameCategoryDesktop:hover {
+    filter: none;
+    transition: 0.25s;
+}
+
+.emailCategoryDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/letter-box-gfe88e9657_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+    height: 35vh;
+    border: 0.05vh solid white;
+    transition: 2s;
+    filter: grayscale(100);
+    position: relative;
+}
+
+.emailCategoryDesktop:hover {
+    filter: none;
+    transition: 0.25s;
+}
+
+
+/*-----------------------------------RECENT POSTS-------------------------------*/
+.recentPostsDesktop {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8vh 40vh 5vh;
+    background:rgba(224, 224, 224, 0.53);
+    padding: 2vh;
+    margin: 5vh 0 6vh 0;
+}
+
+.recentPostsTitleDesktop {
+    font-size: 2rem;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.recentPostsTitleDesktop h2 {
+    margin: 0;
+    line-height: 8vh;
+    font-weight: 600;
+    color: black;
+}
+
+.recentPostDescripsDesktop {
+    margin: 21vh 2vh 2vh 2vh;
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.recentPostsDateDesktop {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.recentPost1Desktop {
+    margin: 2vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/megacities_post.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+
+.recentPost2Desktop {
+    margin: 2vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+
+.recentPost3Desktop {
+    margin: 2vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/writinglessonspart1.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    border-radius: 3%;
+}
+
+.allPostsLinkDesktop {
+    grid-column: 1 / 4;
+}
+
+.allPostsLinkDesktop a, .allPostsLinkDesktop h4 {
+    color:rgb(0, 132, 255);
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+}
+
+.allPostsLinkDesktop a:hover {
+    color: black;
+}
+
+/*---------------------------------FOOTER DESKTOP-------------------------------*/
+
+.footerDesktop {
+    display: block;
+    margin-bottom: 0;
+    background-color: rgba(0, 132, 255, 0.65);
+    /*background-color:hsl(53 71% 87%);*/
+    margin-top: 2vh;
+    padding: 5vh 8vh 3vh 8vh;
+}
+
+.footerDesktop a, .otherFooterDesktop a {
+    text-decoration: none;
+}
+
+
+.footerDesktop h3, .otherFooterDesktop h3 {
+    padding: 1vh 2vh;
+    margin: 0 0 2vh 0;
+    font-size: 2.2rem;
+    font-weight: 1000;
+}
+
+.footerDesktop h4, .otherFooterDesktop h4 {
+    margin: 0vh 0vh 0vh 2vh;
+    font-size: 1.6rem;
+    padding: 1vh;
+}
+
+.footerDesktop img, .otherFooterDesktop img {
+    width: 7vh;
+    height: 7vh;
+}
+
+.instaDesktop, .twitterDesktop, .linkedinDesktop, .emailDesktop {
+    display: flex;
+    margin: 2vh;
+}
+
+.footerDesktop p, .otherFooterDesktop p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0vh 0vh 2vh 2vh;
+    margin: 0;
+}
+
+.versionDesktop {
+    text-align: right;
+    margin-right: 3vh;
+}
+
+.socialsDesktop {
+    display: grid;
+    grid-template-columns: 37% 45%;
+}
+
+.socials2Desktop {
+    display: grid;
+    grid-template-columns: 37% 45%;
+    margin-bottom: -4vh;
+}

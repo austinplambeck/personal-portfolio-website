@@ -1,0 +1,297 @@
+#bgColor {
+    margin: 0;
+    padding: 0 10% 0 10%;
+    background-color: rgba(241, 62, 62, 0.5);
+}
+
+
+.stormIntroDesktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('../images/TScategory3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 15%;
+    padding: 5vh;
+    margin: 0vh -12.5% 0vh -12.5%;
+    height: 78vh;
+}
+
+.stormIntroDesktop h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.9rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1vh;
+    color: white;
+}
+
+
+.stormIntroDesktop h5 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 2.9rem;
+    text-align: right;
+    color: white;
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+}
+
+
+/*--------------Tomorrow's Storm Section------------------*/
+
+.pinBoardFiller2 {
+    height: 450px;
+    width: 650px;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+
+
+.tsSectionDesktop {
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    grid-template-rows: 2;
+    padding-bottom: 4vh;
+}
+
+#writingProjectsTitles {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4.2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.tsTitleDesc h4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.tsTitleDesc p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.tsTitleDesc h5, .tsTitleDesc a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.otherMobileSite2 {
+    display: none;
+}
+
+/*-----------------------WIPS SECTION DEKSTOP-----------------------*/
+.wipsDesktop {
+    display: grid;
+    grid-template-columns: 1.25fr 1.25fr 1fr;
+    column-gap: 1vh;
+    margin: 0;
+    padding-bottom: 5vh;
+}
+
+.wipsSectionTitle {
+    grid-column: 1 / 4;
+}
+
+.fairytalesDesktop, .mythicgameDesktop {
+    border-right: 0.3vh solid black;
+}
+
+.mythicgameDesktop, .otherWipsDesktop {
+    margin-left: 2vh;
+}
+
+#wipsTitles {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    margin: 0vh 0vh;
+}
+
+#wipsList {
+    padding-left: 2vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+    list-style-type: circle;
+}
+
+#wipsList li {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    margin: 1vh 0vh;
+    line-height: 1.8rem;
+}
+
+#boldWIP {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 550;
+}
+
+#italicWIP {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-style: italic;
+}
+
+
+
+
+
+
+/*--------------MOBILE SITE----------------*/
+
+@media only screen and (max-width: 1000px) {
+
+    .otherMobileSite2 {
+        display: block;
+        position: relative;
+        top: 14.3vh;
+        background-color: rgba(241, 62, 62, 0.5);
+    }
+
+    .stormIntroMobile {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('../images/TScategory3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 15%;
+        padding: 5vh;
+        height: 76vh;
+    }
+    
+    .stormIntroMobile h1 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 2.2rem;
+        letter-spacing: 0.5rem;
+        margin-bottom: 1vh;
+        color: white;
+    }
+    
+    
+    .stormIntroMobile h5 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+        font-style: italic;
+        font-weight: normal;
+        line-height: 2rem;
+        text-align: right;
+        color: white;
+        margin-top: 12vh;
+        margin-bottom: 2vh;
+    }
+
+
+
+    /*------TS FEATURE--------*/
+
+    .myNovelFeatureMobile2 {
+        justify-content: center;
+        padding: 2vh;
+    }
+
+    .myNovelFeatureMobile2 a {
+        font-family: 'Rubik', sans-serif;
+        align-items: center;
+    }
+
+    #wipsTitlesMobile {
+        font-family: 'Rubik', sans-serif;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+
+    .myNovelFeatureMobile2 h3, .myNovelFeatureMobile2 h4 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+
+    .myNovelFeatureMobile2 h4 {
+        font-size: 1.3rem;
+    }
+
+    .pinterestBoard {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .myNovelFeatureMobile2 p {
+        font-family: 'Rubik', sans-serif;
+        font-weight: normal;
+        line-height: 1.7rem;
+        font-size: 1.2rem;
+        margin: 2vh 3vh;
+    }
+
+
+    /*-----------------------WIPS SECTION MOBILE-----------------------*/
+
+    .wipsMobile {
+        padding-bottom: 5vh;
+    }
+
+    #wipsTitles2Mobile {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.8rem;
+        text-align: left;
+        margin: 3vh 2vh 1vh 2vh;
+    }
+    
+    #wipsListMobile {
+        padding-left: 2vh;
+        margin: 2vh 2vh 0 2vh;
+        list-style-type: circle;
+    }
+    
+    #wipsListMobile li {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin: 1vh 0vh;
+    }
+    
+    #boldWIP {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        font-weight: 550;
+    }
+    
+    #italicWIP {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-style: italic;
+    }
+
+
+
+
+
+
+    /*-----FOOTER-----*/
+
+    .otherFooterMobile2 {
+        position: relative;
+        top: 13vh;
+        display: block;
+        margin: 0;
+        background-color: rgba(0, 132, 255, 0.65);
+        /*background-color:hsl(53 71% 87%);*/
+        padding-top: 8vh;
+        padding: 3vh 0vh;
+    }
+}
+
+

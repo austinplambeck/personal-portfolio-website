@@ -1,0 +1,71 @@
+
+.otherHeaderMobile, .otherMobileSite, .otherFooterMobile {
+    display: none;
+}
+
+.otherWholeSiteDesktop {
+    position: relative;
+    top: 14vh;
+    margin: 0 10% 0 10%;
+}
+
+
+/*----------------------------OTHER HEADER DESKTOP-----------------------------*/
+.otherHeaderDesktop {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(hsl(53 71% 80% / 1), hsl(53 71% 98% / 0.9));
+    z-index: 999;
+    height: 14vh;
+}
+
+.otherHeaderTitleDesktop {
+    width: 20%;
+    margin: 5vh 0vh 3vh 5vh;
+}
+
+.otherNavDesktop {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 3.5vh auto;
+}
+
+
+.otherHeaderDesktop a, .otherHeaderDesktop span {
+    text-decoration: none;
+}
+
+.otherHeaderTitleDesktop h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 0.2vh 0.2vh white;
+}
+
+.otherNavDesktop h4 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.otherHeaderDesktop a:hover {
+    color: rgb(0, 132, 255);
+    transition: 0.1s;
+}
+
+
+
+
+
+
+
+/*----------------------FOOTER---------------------*/
+.otherFooterDesktop {
+    position: relative;
+    top: 14vh;
+    margin: 0;
+    background-color: rgba(0, 132, 255, 0.65);
+    padding: 5vh 8vh 3vh 8vh;
+}

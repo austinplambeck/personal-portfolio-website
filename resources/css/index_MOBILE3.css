@@ -1,0 +1,596 @@
+
+
+/*--------------------------------MOBILE HEADER--------------------------------*/
+@media only screen and (max-width: 1000px) {
+    * {
+        font-family: monospace, Verdana, sans-serif, Arial;
+        color: black;
+    }
+    
+    
+    body {
+        margin: 0;
+        padding-top: 0;
+        font-size: 10pt;
+    }
+    
+    html {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 10pt;
+    }
+
+    .headerDesktop {
+        display: none;
+    }
+
+    .headerCoverDesktop {
+        display: none;
+    }
+
+    .headerMobile {
+        display: block;
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: 100;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.6)), url('../images/websiteintropic.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Header Title & Menu scrolling version*/
+
+    .headerTitleMobile.sticky {
+        background: hsl(53 71% 87% / 0.97);
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    .headerTitleMobile.sticky #mobileTitleLink{
+        color: black;
+        text-shadow: 0.2vh 0.2vh white;
+        transition: 0.75s;
+    }
+
+
+    /*Header Title & Menu */
+    .headerTitleMobile {
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        transition: 0.75s;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .headerTitleMobile h1 {
+        margin: 5vh 2vh;
+    }
+
+    #mobileTitleLink {
+        text-decoration: none;
+        color: white;
+        text-shadow: 0.2vh 0.2vh rgb(2, 16, 92);
+        font-size: 1.8rem;
+        transition: 0.75s;
+    }
+
+    #mobileTitleLink:hover {
+        text-shadow: 0.4vh 0.4vh black;
+    }
+
+    /*Toggle Navigation*/
+    .mobileNavToggle {
+        position: absolute;
+        z-index: 9999;
+        width: 4vh;
+        aspect-ratio: 1;
+        top: 5vh;
+        right: 4vh;
+        padding: 0;
+        border: 0;
+        background-image: url('../images/hamburgermenu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size:contain;
+    }
+
+    .mobileNavToggle[aria-expanded="true"] {
+        background-image: url('../images/closemenu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size:contain;
+        z-index: 9999;
+    }
+
+    /*Navigation Buttons*/
+    .mobileNav {
+        display: flex;
+        z-index: 100;
+        position: fixed;
+        inset: 0 0 0 50%;
+        padding: 10vh 2vh;
+        flex-direction: column;
+        background: hsl(0 0% 23% / 0.5);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .mobileNav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    /*Scrolling Navigation*/
+    .headerTitleMobile.sticky .mobileNav {
+        display: flex;
+        z-index: 100;
+        position: fixed;
+        inset: 0 0 0 50%;
+        padding: 10vh 2vh;
+        flex-direction: column;
+        background: hsl(55 100% 96% / 0.98);
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .headerTitleMobile.sticky .mobileNav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+  
+
+    .mobileNav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .mobileNav a span {
+        font-weight: 1000;
+    }
+
+    .mobileNav a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    .mobileNav li {
+        padding-top: 4vh;
+    }
+
+    .mobileNav a:hover {
+        color: black;
+        font-weight: 700;
+    }
+
+    .mobileNav a:hover span {
+        color: white;
+    }
+
+    /*Scrolling Navigation Buttons*/
+    .headerTitleMobile.sticky .mobileNav a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .headerTitleMobile.sticky .mobileNav ul li a:hover span {
+        color: rgb(0, 132, 255);
+    }
+
+    /*Header Subtitle*/
+    .headerSubtitle {
+        text-align: center;
+        position: relative;
+        top: 60vh;
+    }
+
+    .headerSubtitle h2, .headerSubtitle h3 {
+        color: white;
+        text-shadow: 0.3vh 0.3vh rgb(2, 16, 92);
+        z-index: 10;
+    }
+ 
+    .headerSubtitle h2 {
+        font-size: 2.5rem;
+    }
+
+    .headerSubtitle h3 {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/*----------------------------MOBILE SITE--------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    /*------------------SUBTITLE SECTION--------------------*/
+        .wholeSiteDesktop {
+            display: none;
+        }
+    
+        .footerDesktop{
+            display: none;
+        }
+    
+        .wholeSiteMobile {
+            display: block;
+            margin-left: 5%;
+            margin-right: 5%;
+            justify-content: center;
+            position: relative;
+            top: 100vh;
+        }
+    
+        .aboutMobile {
+            margin-top: 4vh;
+            margin-bottom: 5vh;
+        }
+    
+        .aboutMobile h2 {
+            text-align: center;
+            font-size: 1.7rem;
+            margin-bottom: 2vh;
+        }
+    
+        .aboutMobile span {
+            font-style: italic;
+        }
+    
+        .aboutMobile p {
+            font-size: 1.2rem;
+            margin-top: 2.5vh;
+            line-height: 2.1rem;
+        }
+    
+        .aboutMobile a {
+            line-height: 2.1rem;
+            font-weight: bold;
+            color: rgb(0, 132, 255);
+        }
+    
+        .aboutMobile a:hover {
+            color:rgb(0, 101, 196);
+        }
+    
+        .aboutSignatureMobile {
+            text-align: right;
+            font-weight: bold;
+        }
+    
+        .mobileBorder1 {
+            border-bottom: 0.35vh solid black;
+            margin-left: 5%;
+            margin-right: 5%; 
+            display: block;
+        }
+
+    /*-------------------MOBILE NOVEL FEATURE------------------*/
+        .myNovelFeatureMobile {
+            justify-content: center;
+            margin-bottom: 4vh;
+        }
+
+        .myNovelFeatureMobile a {
+            text-decoration: none;
+            font-family: 'Lato', sans-serif;
+            align-items: center;
+        }
+    
+        .myNovelFeatureMobile h2 {
+            font-size: 1.7rem;
+            text-align: center;
+        }
+
+        .myNovelFeatureMobile h2:hover {
+            text-shadow: 0.2vh 0.2vh white;
+        }
+
+        #novelDate {
+            text-decoration: underline;
+            color:rgb(0, 132, 255);
+        }
+
+        #novelDate:hover {
+            color:black;
+        }
+
+        .myNovelFeatureMobile h3, .myNovelFeatureMobile h4 {
+            font-size: 1.5rem;
+            text-align: center;
+
+        }
+    
+        .myNovelFeatureMobile h4 {
+            font-size: 1.3rem;
+        }
+    
+        .pinterestBoard {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .myNovelFeatureMobile p {
+            font-family: 'Lato', sans-serif;
+            font-weight: normal;
+            line-height: 1.7rem;
+            font-size: 1.2rem;
+            margin: 2vh 3vh;
+        }
+    
+        
+    
+        /*---------------------MOBILE CATEGORIES--------------------------*/
+
+        .categoriesMobile {
+            margin: 4vh 2%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .categoriesMobile a {
+            text-decoration: none;
+        }
+
+        .categoryTitleMobile {
+            color: white;
+            margin: 10vh 2vh;
+            font-size: 2rem;
+        }
+
+        .categoryTitleMobile:hover {
+            color:rgb(0, 132, 255);
+        }
+
+        .tsCategoryMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/TScategory3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 17vh;
+            border-bottom: 0.1vh solid white;
+            position: relative;
+        }
+
+        .projectsCategoryMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/joan-gamell-ZS67i1HLllo-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 17vh;
+            border-bottom: 0.1vh solid white;
+            position: relative;
+        }
+
+        .writingCategoryMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/aaron-burden-y02jEX_B0O0-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 70% 70%;
+            height: 17vh;
+            border-bottom: 0.1vh solid white;
+            position: relative;
+        }
+
+        .blogCategoryMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/girl-with-red-hat-Z6SXt1v5tP8-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 60%;
+            height: 17vh;
+            border-bottom: 0.1vh solid white;
+            position: relative;
+        }
+
+        .mythicgameCategoryMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/dore.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 20% 40%;
+            height: 17vh;
+            border-bottom: 0.1vh solid white;
+            position: relative;
+        }
+
+        .newsletterCategoryMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.95)), url('../images/letter-box-gfe88e9657_1920.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 20% 40%;
+            height: 17vh;
+            position: relative;
+        }
+
+
+    
+        /*--------------------------RECENT POSTS MOBILE----------------------------*/
+
+        .postMobile {
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        
+        .recentPostsMobile {
+            display:block;
+            margin: 0;
+        }
+
+        .recentPostsMobile h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .postTitleMobile, .postTitleMobile2, .postTitleMobile3, .postTitleMobile4 {
+            margin: 2vh 0vh;
+            background-size: cover;
+            height: 32vh;
+            border-radius: 4%;
+        }
+
+        .postTitleMobile4 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/megacities_post.jpg');
+            background-position: 50% 50%;
+        }
+
+        .postTitleMobile {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg');
+        }
+
+        .postTitleMobile2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/writinglessonspart1.jpg');
+        }
+
+        .postTitleMobile3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.99)), url('../images/welcomeaboard.jpg');
+        }
+
+        .postTitleMobile h3, .postTitleMobile2 h3, .postTitleMobile3 h3, .postTitleMobile4 h3 {
+            margin: 1vh 2vh;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .postTitleMobile a, .postTitleMobile2 a, .postTitleMobile3 a, .postTitleMobile4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .postTitleMobile a:hover, .postTitleMobile2 a:hover, .postTitleMobile3 a:hover, .postTitleMobile4 a:hover {
+            color:rgb(0, 132, 255);
+        }
+
+        .postDateMobile {
+            font-weight: 400;
+            text-align: center;
+            font-size: 1rem;
+            color: white;
+            margin: 0;
+        }
+
+        .postDescripMobile {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.3rem;
+            font-size: 1.1rem;
+            margin: 2vh;
+        }
+
+        .recentPostsMobile h4 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .allPostsLinkMobile {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: rgb(0, 132, 255);
+            text-align: center;
+        }
+
+        .allPostsLinkMobile:hover {
+            color: rgb(0, 101, 196);
+        }
+
+
+        /*------SLIDESHOW ARROWS------*/
+
+        .recentPostsPaddingMobile {
+            height: 38%;
+        }
+
+        .arrowsMobile {
+            display: flex;
+            justify-content: space-between;
+            margin: 0vh 1vh 1vh 1vh;
+        }
+        
+        .w3-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .w3-left, .w3-right {
+            margin: 0vh;
+            width: 3vh;
+            height: 5vh;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .w3-left:hover, .w3-right:hover {
+            color:rgb(0, 132, 255);
+            cursor: pointer;
+        }
+
+
+    
+    /*-----------------MOBILE FOOTER--------------*/
+        .otherFooterMobile {
+            position: relative;
+            top: 13vh;
+            display: block;
+            margin-bottom: 0;
+            background-color: rgba(0, 132, 255, 0.65);
+            margin-top: 8vh;
+            padding: 3vh 0vh;
+        }
+
+        
+        .footerMobile {
+            display: block;
+            margin-bottom: 0;
+            background-color: rgba(0, 132, 255, 0.65);
+            margin-top: 8vh;
+            padding: 3vh 0vh;
+            position: relative;
+            top: 100vh;
+        }
+
+        .footerMobile a, .otherFooterMobile a {
+            text-decoration: none;
+        }
+
+
+        .footerMobile h3, .otherFooterMobile h3 {
+            padding: 1vh 2vh;
+            margin: 0;
+            font-size: 1.6rem;
+            font-weight: 1000;
+        }
+
+        .footerMobile h4, .otherFooterMobile h4 {
+            margin: 0vh 0vh 0vh 2vh;
+            font-size: 1.2rem;
+            padding: 1vh;
+        }
+
+        .footerMobile img, .otherFooterMobile img {
+            width: 7vh;
+            height: 7vh;
+        }
+
+        .instaMobile, .twitterMobile, .linkedinMobile, .newsletterMobile {
+            display: flex;
+            margin: 2vh;
+        }
+
+        .footerMobile p, .otherFooterMobile p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 0vh 0vh 2vh 2vh;
+            margin: 0;
+        }
+    
+    }
